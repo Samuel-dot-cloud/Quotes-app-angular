@@ -8,16 +8,16 @@ export class DateCounterPipe implements PipeTransform {
 
   transform(value: any): number {
     const currentDay: Date = new Date();
-    const todayWithNoTime: any = new Date(currentDay.getFullYear(),currentDay.getMonth(),currentDay.getDate());
-    //gets userinput date
+    const todayWithNoTime: any = new Date(currentDay.getFullYear(), currentDay.getMonth(), currentDay.getDate());
 
-    var dateDifference = Math.abs(todayWithNoTime-value);
+
+    const dateDifference = Math.abs(todayWithNoTime - value);
     const secondsInDay = 86400;
-    var dateDifferenceSeconds = dateDifference*0.001;
+    const dateDifferenceSeconds = dateDifference * 0.001;
 
-    var dateCounter = dateDifferenceSeconds/secondsInDay;
+    const dateCounter = dateDifferenceSeconds / secondsInDay;
 
-    if(dateCounter >= 1 ){
+    if (dateCounter >= 1 ) {
       return dateCounter;
     } else {
       return 0;
