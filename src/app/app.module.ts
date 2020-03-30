@@ -6,17 +6,22 @@ import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteDescComponent } from './quote-desc/quote-desc.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
-
+import {FormsModule} from '@angular/forms';
+import { LeaderDirective } from './leader.directive';
+import { DateCounterPipe } from './date-counter.pipe';
 @NgModule({
   declarations: [
     AppComponent,
     QuoteComponent,
     QuoteDescComponent,
-    QuoteFormComponent
+    QuoteFormComponent,
+    LeaderDirective,
+    DateCounterPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

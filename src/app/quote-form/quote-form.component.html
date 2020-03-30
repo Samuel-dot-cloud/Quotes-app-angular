@@ -1,1 +1,40 @@
-<p>quote-form works!</p>
+<div>
+    <div>
+        <div class="container-fluid">
+            <h2 class="text-center">Add another quote!!!</h2>
+            <hr>
+            <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+                <div class="form-group">
+
+                    <label for="name">Quote.</label>
+                    <textarea class="form-control" id="description" rows="4" required id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel'></textarea>
+                    <div [hidden]="name.valid || name.pristine" class="alert alert-warning">
+                        <p>Quote description is required!!!</p>
+                    </div>
+                </div>
+                <div class="form-group">
+
+                    <label for="author">Author of quote.</label>
+                    <input type="text" required class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #author='ngModel'>
+                    <div [hidden]="author.valid || author.pristine" class="alert alert-warning">
+                        <p>Author of quote is required!!!</p>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="submission">Submitted By</label>
+                    <input type='text' id="submit" required class="form-control" [(ngModel)]="newQuote.submission" name="submission" #submission='ngModel'>
+                    <div [hidden]="submission.valid || submission.pristine" class="alert alert-warning">
+                        <p>Person who submitted is required!!!</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type='date' id="date" required class="form-control" [(ngModel)]="newQuote.posted" name="posted" #posted='ngModel'>
+                    <div [hidden]="posted.valid || posted.pristine" class="alert alert-warning">
+                        <p>Date of submission is required!!!</p>
+                    </div>
+                    <button type="submit" class="btn btn-success">Add Quote</button>
+                </div>
+            </form>
+        </div>

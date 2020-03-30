@@ -7,9 +7,14 @@
     </div>
     <div class="row">
         <div class="column-md-6">
-            <div *ngFor='let quote of quotes;let i=index'>
-
+            <div *ngFor='let quote of quotes;let i =index'>
+                <h4>{{quote.name}}</h4>
+                <button (click)="toggleDetails(i)">Toggle</button>
+                <app-quote-desc [quote]='quote' (isDelete)="deleteQuote($event,i)"></app-quote-desc>
             </div>
+        </div>
+        <div class="col-md-6">
+            <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
         </div>
     </div>
 </div>
