@@ -1,5 +1,6 @@
 import { Directive, Input, OnInit, ElementRef } from '@angular/core';
 import {Quote} from 'src/app/quote';
+import {all} from 'q';
 
 @Directive({
   selector: '[appLeader]'

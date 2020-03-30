@@ -9,6 +9,7 @@ import { QuoteFormComponent } from './quote-form/quote-form.component';
 import {FormsModule} from '@angular/forms';
 import { LeaderDirective } from './leader.directive';
 import { DateCounterPipe } from './date-counter.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +23,7 @@ import { DateCounterPipe } from './date-counter.pipe';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
