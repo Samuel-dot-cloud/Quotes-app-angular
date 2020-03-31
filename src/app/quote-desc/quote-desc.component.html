@@ -7,7 +7,7 @@
             <button type="button" (click)=" quote.upvote=quote.upvote+1 " class="btn btn-primary btn-sm ">Upvotes <i class="fa fa-thumbs-up mx-2"></i><span class="badge badge-light">{{quote.upvote}}</span> </button>
             <button type="button" (click)=" quote.downvote=quote.downvote+1 " class="btn btn-warning btn-sm ">Downvotes <i class="fa fa-thumbs-down mx-2 text-danger"></i> <span class="badge badge-light">{{quote.downvote}}</span> </button>
             <br><br>
-            <button class="btn btn-outline-danger" (click)="quoteDelete(true)">Delete</button>
+            <button class="btn btn-outline-danger" (click)="quoteDelete(true)">Delete<i class="fa fa-trash mx-2"></i></button>
         </div>
     </div>
 </div>

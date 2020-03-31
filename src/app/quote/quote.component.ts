@@ -26,6 +26,7 @@ toggleDetails(index: number) {
 }
 
 
+
 displayDetail(index: number) {
   this.quotes[index].displayDetail = !this.quotes[index].displayDetail;
 }
