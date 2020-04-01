@@ -11,18 +11,18 @@ export class LeaderDirective {
 constructor(private el: ElementRef) {
 
 
-let highestId;
+let highestVote: number;
 let initialVote = 0;
 const allQuotes = this.quotes[0];
 const currentQuote = this.quotes[1];
 allQuotes.forEach(quote => {
 if (quote.upvote > initialVote) {
 initialVote = quote.upvote;
-highestId = quote.upvote;
+highestVote = quote.value;
 }
 });
 
-if (currentQuote.upvote === highestId) {
+if (currentQuote.value === highestVote) {
   this.el.nativeElement.style.colors = 'gold';
   this.el.nativeElement.style.color = 'white';
  }

@@ -6,7 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class DateCounterPipe implements PipeTransform {
 
 
-  transform(value: any): number {
+  transform(value: any): any {
     const currentDay: Date = new Date();
     const todayWithNoTime: any = new Date(currentDay.getFullYear(), currentDay.getMonth(), currentDay.getDate());
 
@@ -20,7 +20,7 @@ export class DateCounterPipe implements PipeTransform {
     if (dateCounter >= 1 ) {
       return dateCounter;
     } else {
-      return 0;
+      return 'ten days ago';
     }
 
 

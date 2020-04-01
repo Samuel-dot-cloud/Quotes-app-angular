@@ -14,7 +14,6 @@
             <div class="column-mb-6">
                 <li *ngFor='let quote of quotes;let i = index'>
                     <h4>{{quote.name}}</h4>
-                    <!-- <button (click)=" toggleDetails(i)">Toggle</button> -->
                     <app-quote-desc [quote]='quote ' (isDelete)="deleteQuote($event,i)"></app-quote-desc>
                 </li>
             </div>

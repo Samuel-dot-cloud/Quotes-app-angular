@@ -1,11 +1,11 @@
 # PROJECT NAME.
-The project is titled 'Quotes'.For the live site, please visit:https://samuel-dot-cloud.github.io/Quotes-app-angular/
+The project is titled 'Quotes'.For the live site, please visit:https://samuel-dot-cloud.github.io/Quotes-app-angular/ :point_left::point_left: :point_left:
 
 ## PROJECT DESCRIPTION.
-The project is basically an angular application whereby a user has the ability to create a new quote,upvote or downvote,delete a goal and see the number of upvotes or downvotes.
+The project is basically an angular application whereby a user has the ability to create a new quote,upvote or downvote,delete a goal and see the number of upvotes or downvotes.:ok_hand::ok_hand:
 
 ## AUTHOR'S INFORMATION.
-My name is Samuel and i am currently a software developer at Moringa school.
+My name is Samuel and i am currently a software developer at Moringa school.:man_technologist::man_technologist:
 
 ## SETUP INSTRUCTIONS.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.2.
@@ -32,6 +32,12 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ##### Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## BDD(BEHAVIOUR DRIVEN DEVELOPMENT).
+Behaviour|Input example|Output example
+---------|-------------|--------------
+Click vote button|Press upvote or downvote|Vote is added by one.
+Input in form.|Type quote and details.|pushes quote and details to list.
 
 ## TECHNOLOGIES USED.
 The project makes use of HTML, CSS, and typescript, which is a superset of JavaScript.
