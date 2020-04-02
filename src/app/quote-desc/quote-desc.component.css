@@ -19,3 +19,7 @@
     .votes {
         display: flex;
     }
+    
+    .votes button {
+        margin-right: 10px;
+    }
